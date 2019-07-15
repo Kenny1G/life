@@ -63,4 +63,34 @@ public class BoardState
     public int[][] getBoardState() {
         return boardState;
     }
+
+    public int[][] nextBoardState(BoardState currentBoardState)
+    {
+        return null;
+
+    }
+
+    public int numOfAliveNeighbours(int y, int x, BoardState boardState)
+    {
+        int numAlive = 0;
+        int[][] state = boardState.getBoardState();
+        for (int yy = 0; yy < state.length; yy++)
+        {
+            if (yy == y || yy == y - 1 || yy == y+ 1)
+            {
+                for (int xx = 0; xx < state[yy].length; xx++)
+                {
+                    if (xx == x || xx == x - 1 || xx == x + 1)
+                    {
+                        if (state[yy][xx] == 1)
+                        {
+                            numAlive++;
+                        }
+                    }
+                }
+            }
+
+        }
+        return numAlive;
+    }
 }
