@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe91d24f-9aff-4f90-a2ea-90f96a3e060a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/life.iml" beforeDir="false" afterPath="$PROJECT_DIR$/life.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/BoardState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/BoardState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BoardTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/BoardState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+            <state relative-caret-position="41">
+              <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="38" selection-end-column="9" />
               <folding>
                 <element signature="e#1671#1672#0" expanded="true" />
                 <element signature="e#1705#1706#0" expanded="true" />
@@ -34,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/BoardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+            <state relative-caret-position="70">
+              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="41">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -71,13 +69,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Board.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/BoardState.java" />
         <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/model.java" />
         <option value="$PROJECT_DIR$/src/test/Test.java" />
-        <option value="$PROJECT_DIR$/src/model/BoardState.java" />
         <option value="$PROJECT_DIR$/src/test/BoardTest.java" />
+        <option value="$PROJECT_DIR$/src/model/BoardState.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -143,7 +141,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BoardTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="life" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="life" />
       <extension name="coverage">
@@ -155,22 +160,6 @@
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.BoardTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BoardTest.testAliveMethod1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="life" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.BoardTest" />
-      <option name="METHOD_NAME" value="testAliveMethod1" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -225,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.BoardTest" />
         <item itemvalue="JUnit.BoardTest.testNextState2" />
         <item itemvalue="JUnit.BoardTest.testAliveMethod3" />
         <item itemvalue="JUnit.BoardTest.testAliveMethod2" />
-        <item itemvalue="JUnit.BoardTest.testAliveMethod1" />
       </list>
     </recent_temporary>
   </component>
@@ -250,44 +239,44 @@
       <workItem from="1563163547312" duration="598000" />
       <workItem from="1563201778907" duration="4508000" />
       <workItem from="1563232205084" duration="2471000" />
-      <workItem from="1563336455091" duration="1964000" />
+      <workItem from="1563336455091" duration="3069000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BoardTest_testAliveMethod3 - 2019.07.15 at 19h 25m 50s.xml">
+    <history-entry file="BoardTest_testAliveMethod1 - 2019.07.17 at 00h 40m 26s.xml">
+      <configuration name="BoardTest.testAliveMethod1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoardTest_testAliveMethod2 - 2019.07.17 at 00h 40m 34s.xml">
+      <configuration name="BoardTest.testAliveMethod2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoardTest_testAliveMethod3 - 2019.07.17 at 00h 40m 36s.xml">
       <configuration name="BoardTest.testAliveMethod3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_testAliveMethod3 - 2019.07.17 at 00h 08m 33s.xml">
+    <history-entry file="BoardTest_testAliveMethod3 - 2019.07.17 at 00h 41m 36s.xml">
       <configuration name="BoardTest.testAliveMethod3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest - 2019.07.17 at 00h 12m 07s.xml">
+    <history-entry file="BoardTest_testAliveMethod3 - 2019.07.17 at 00h 41m 41s.xml">
+      <configuration name="BoardTest.testAliveMethod3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoardTest_testNextState2 - 2019.07.17 at 00h 41m 44s.xml">
+      <configuration name="BoardTest.testNextState2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoardTest_testNextState2 - 2019.07.17 at 00h 41m 45s.xml">
+      <configuration name="BoardTest.testNextState2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoardTest_testNextState2 - 2019.07.17 at 00h 41m 49s.xml">
+      <configuration name="BoardTest.testNextState2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoardTest - 2019.07.17 at 00h 41m 58s.xml">
       <configuration name="BoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_testNextState1 - 2019.07.17 at 00h 32m 04s.xml">
-      <configuration name="BoardTest.testNextState1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoardTest_testNextState1 - 2019.07.17 at 00h 33m 31s.xml">
-      <configuration name="BoardTest.testNextState1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoardTest_testNextState1 - 2019.07.17 at 00h 35m 22s.xml">
-      <configuration name="BoardTest.testNextState1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoardTest_testNextState1 - 2019.07.17 at 00h 35m 50s.xml">
-      <configuration name="BoardTest.testNextState1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoardTest_testNextState2 - 2019.07.17 at 00h 37m 01s.xml">
-      <configuration name="BoardTest.testNextState2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoardTest_testNextState2 - 2019.07.17 at 00h 39m 09s.xml">
-      <configuration name="BoardTest.testNextState2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoardTest_testNextState2 - 2019.07.17 at 00h 39m 35s.xml">
-      <configuration name="BoardTest.testNextState2" configurationId="JUnit" />
+    <history-entry file="BoardTest - 2019.07.17 at 00h 50m 19s.xml">
+      <configuration name="BoardTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14962000" />
+    <option name="totallyTimeSpent" value="16067000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -300,7 +289,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1436" y="144" width="1850" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="1" />
@@ -309,15 +297,15 @@
       <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.2710643" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3293348" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3991276" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.8069793" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991276" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3293348" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3293348" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32861805" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32824427" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3293348" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -332,32 +320,13 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/BoardTest.java</url>
-          <line>74</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Board.java" />
     <entry file="file://$PROJECT_DIR$/src/model.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/BoardState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        <state relative-caret-position="41">
+          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="38" selection-end-column="9" />
           <folding>
             <element signature="e#1671#1672#0" expanded="true" />
             <element signature="e#1705#1706#0" expanded="true" />
@@ -369,11 +338,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/BoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        <state relative-caret-position="70">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
