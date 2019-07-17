@@ -7,7 +7,7 @@ public class Main
         while (true)
         {
             board.render();
-            board.nextBoardState();
+            board.setBoardState(board.nextBoardState());
             Thread.sleep(3);
 
         }
