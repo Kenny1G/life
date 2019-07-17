@@ -1,17 +1,23 @@
-import java.util.Arrays;
+package model;
+
 import java.util.Random;
 
 public class BoardState
 {
+    private int width;
+    private int height;
     private int[][] boardState;
+
     public BoardState(int width, int height)
     {
-        this.boardState = randomState(width, height);
+        this.width = width;
+        this.height = height;
+        this.boardState = randomState();
     }
 
-    private int[][] randomState(int width, int height)
+    private int[][] randomState()
     {
-        int[][] newState = deadState(width,height);
+        int[][] newState = deadState();
         for (int x = 0; x < newState.length; x++)
         {
             for (int y = 0; y < newState[x].length; y++)
@@ -21,7 +27,7 @@ public class BoardState
         }
         return newState;
     }
-    private int[][] deadState(int width, int height)
+    public int[][] deadState()
     {
         int[][] grid = new int[height][width];
         for (int y = 0; y < grid.length; y++)
@@ -64,9 +70,33 @@ public class BoardState
         return boardState;
     }
 
-    public int[][] nextBoardState(BoardState currentBoardState)
+    public void setBoardState(int[][] boardState)
     {
-        return null;
+        this.boardState = boardState;
+    }
+
+    public BoardState(int width)
+    {
+        this.width = width;
+    }
+
+    public int getHeight()
+    {
+        return height;
+    }
+
+    public int[][] nextBoardState()
+    {
+        int[][] nextBoard = this.deadState();
+        int[][] thisBoard = this.getBoardState();
+        for (int y = 0; y < thisBoard.length; y++)
+        {
+            for ( int x = 0; x < thisBoard[y].length; x++)
+            {
+                nextBoard[y][x] = nextState(thisBoard[y][x],numOfAliveNeighbours(y,x,this));
+            }
+        }
+        return nextBoard;
 
     }
 
@@ -89,8 +119,33 @@ public class BoardState
                     }
                 }
             }
-
         }
         return numAlive;
+    }
+
+    public int nextState(int currentState, int numOfNeighbours)
+    {
+        if (currentState == 1)
+        {
+            if (numOfNeighbours == 2 || numOfNeighbours == 3)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+        else
+        {
+          if (numOfNeighbours == 3)
+          {
+              return 1;
+          }
+          else
+          {
+              return 0;
+          }
+        }
     }
 }
