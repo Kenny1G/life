@@ -4,22 +4,20 @@ import model.BoardState;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Arrays;
-
 import static org.junit.Assert.*;
 
 public class BoardTest
 {
     private BoardState boardState = new BoardState(3,3);
     int[][] deadState;
-    int[][] onseState;
+    int[][] oneState;
     int[][] twoState;
 
     @Before
     public void setup()
     {
         deadState = boardState.deadState();
-        onseState = new int[][]{
+        oneState = new int[][]{
                 {0,0,0},
                 {0,1,0},
                 {0,0,1}
@@ -35,7 +33,7 @@ public class BoardTest
     public void testAliveMethod1()
     {
         boardState.setBoardState(deadState);
-        int check = boardState.numOfAliveNeighbours(0,0,boardState);
+        int check = boardState.numOfAliveNeighbours(0,0,boardState.getBoardState());
         assertEquals(check,0);
 
     }
@@ -43,16 +41,16 @@ public class BoardTest
     @Test
     public void testAliveMethod2()
     {
-        boardState.setBoardState(onseState);
-        int check = boardState.numOfAliveNeighbours(0,0,boardState);
+        boardState.setBoardState(oneState);
+        int check = boardState.numOfAliveNeighbours(0,0,boardState.getBoardState());
         assertEquals(check,1);
     }
 
     @Test
     public void testAliveMethod3()
     {
-        boardState.setBoardState(onseState);
-        int check = boardState.numOfAliveNeighbours(1,1,boardState);
+        boardState.setBoardState(oneState);
+        int check = boardState.numOfAliveNeighbours(1,1,boardState.getBoardState());
         assertEquals(check,2);
     }
 

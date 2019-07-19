@@ -1,5 +1,9 @@
 package model;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Random;
 
 public class BoardState
@@ -13,6 +17,57 @@ public class BoardState
         this.width = width;
         this.height = height;
         this.boardState = randomState();
+    }
+
+    public BoardState(String fileName)
+    {
+        setDimensionsFromFile(fileName);
+        try {
+            String line;
+            FileReader fileReader = new FileReader(fileName);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            boardState = deadState();
+            int y = 0;
+            while ((line = bufferedReader.readLine()) != null)
+            {
+                for (int x = 0; x < line.length(); x++)
+                {
+                    int a = Integer.parseInt(String.valueOf(line.charAt(x)));
+                    boardState[y][x] =  a;
+                }
+                y++;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void setDimensionsFromFile(String fileName)
+    {
+        try
+        {
+            String line;
+            int rows = 0;
+            int columns = 0;
+            FileReader fileReader = new FileReader(fileName);
+            BufferedReader firstBufferedReader = new BufferedReader(fileReader);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            while ((line = firstBufferedReader.readLine()) != null)
+            {
+                for (int i = 0; i < line.length(); i++)
+                {
+                    columns++;
+                }
+                rows++;
+            }
+            columns = columns / rows;
+            this.width = columns;
+            this.height = rows;
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
     }
 
     private int[][] randomState()
@@ -56,7 +111,7 @@ public class BoardState
             {
                 if(i == 0)
                 {
-                    System.out.print(" ");
+                    System.out.print("+");
                 }else
                 {
                     System.out.print("#");
@@ -93,17 +148,17 @@ public class BoardState
         {
             for ( int x = 0; x < thisBoard[y].length; x++)
             {
-                nextBoard[y][x] = nextState(thisBoard[y][x],numOfAliveNeighbours(y,x,this));
+                //todo: fix next BoardState bug.
+                nextBoard[y][x] = nextState(thisBoard[y][x],numOfAliveNeighbours(y,x,thisBoard));
             }
         }
         return nextBoard;
 
     }
 
-    public int numOfAliveNeighbours(int y, int x, BoardState boardState)
+    public int numOfAliveNeighbours(int y, int x, int[][] state)
     {
         int numAlive = 0;
-        int[][] state = boardState.getBoardState();
         for (int yy = 0; yy < state.length; yy++)
         {
             if (yy == y || yy == y - 1 || yy == y+ 1)
@@ -148,4 +203,6 @@ public class BoardState
           }
         }
     }
+
+
 }
