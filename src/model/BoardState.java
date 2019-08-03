@@ -111,7 +111,7 @@ public class BoardState
             {
                 if(i == 0)
                 {
-                    System.out.print("+");
+                    System.out.print(" ");
                 }else
                 {
                     System.out.print("#");

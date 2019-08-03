@@ -3,7 +3,7 @@ import model.BoardState;
 public class Main
 {
     public static void main(String[] args) throws InterruptedException {
-        BoardState board = new BoardState("/home/kenny/Documents/life/src/Files/toad.txt");
+        BoardState board = new BoardState(200,300);
         while (true)
         {
             board.render();
